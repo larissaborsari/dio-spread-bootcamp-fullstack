@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamento Flex Box - Flex-basis</title>
+    <style>
+        .container{
+            display:flex;
+            max-width: 500px;
+            border: 1px solid white;
+
+        }
+
+        .item{
+            background-color: rgb(247, 4, 85);
+            text-align: center;
+            margin: 5px;
+        }
+
+        .b-auto {
+            flex-basis: auto; 
+        }
+
+        .b-zero {
+            flex-basis: 0; 
+        }
+
+        .b-def {
+            flex-basis: 100px; 
+        }
+
+        .fg-0 {
+            flex-grow: 0;
+        }
+
+        .fg-1 {
+            flex-grow: 1;
+        }
+
+        .fg-2 {
+            flex-grow: 2; /*espaço que sobra 2x maior*/
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <p>auto</p>
+    <div class="container">
+        <div class="item b-auto fg-1">A</div>
+        <div class="item b-auto fg-1">BBB</div>
+        <div class="item b-auto fg-1">C</div>
+        <div class="item b-auto fg-2">DEF</div>
+    </div>
+
+    <p>0 </p>
+    <div class="container">
+        <div class="item b-zero fg-1">AAAAAAAAAAAAAAA</div>
+        <div class="item b-zero fg-1">BBB</div>
+        <div class="item b-zero fg-1">C</div>
+        <div class="item b-zero fg-2">DEF</div>
+    </div>
+
+    <p>definido</p>
+    <div class="container">
+        <div class="item b-def fg-2">AAAAAAAAAAAA</div>
+        <div class="item b-def fg-2">BBB</div>
+        <div class="item b-def fg-2">C</div>
+        <div class="item b-def fg-2">DEF</div>
+    </div>
+
+</body>
+</html>

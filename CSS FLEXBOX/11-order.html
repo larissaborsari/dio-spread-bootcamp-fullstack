@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Flex Box - Order</title>
+
+    <style>
+         .container{
+            display: flex;
+            max-width: 350px;
+            border: 1px solid white;
+        }
+
+        .item {
+            background-color: aquamarine;
+            color: black;
+            margin: 5px;
+            font-size: 18px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .o1 {
+            order: 1;
+        }
+
+        .o2 {
+            order: 2;
+        }
+
+        .o3 {
+            order: 3;
+        }
+
+        .o4 {
+            order: 4;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p>Order: 0</p>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <p>Order mix</p>
+    <div class="container">
+        <div class="item o3">1</div>
+        <div class="item o4">2</div>
+        <div class="item o1">3</div>
+        <div class="item o2">4</div>
+    </div>
+
+    <h1>column</h1>
+    <p>Order: 0</p>
+    <div class="container column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <p>Order mix</p>
+    <div class="container column">
+        <div class="item o3">1</div>
+        <div class="item o4">2</div>
+        <div class="item o1">3</div>
+        <div class="item o2">4</div>
+    </div>
+</body>
+</html>

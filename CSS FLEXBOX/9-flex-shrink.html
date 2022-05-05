@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Flex Box - Flex-shrink</title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 350px;
+            border: 1px solid white;
+        }
+
+        .item {
+            background-color: aquamarine;
+            color: black;
+            margin: 5px;
+            font-size: 18px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .s-1 {
+            flex-shrink: 1;
+        }
+        
+        .s-2 {
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+
+        .s-3 {
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+
+        .s-0 {
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+        
+        .fg-1 {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>FS 1</p>
+    <div class="container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+
+    <p>FS 1</p>
+    <div class="container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">Gate keepers of hell but sit on the laptop 
+        but when owners are asleep, cry for no apparent reason.</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">E</div>
+    </div>
+
+    <p>FS 0</p>
+    <div class="container">
+        <div class="item s-0 fg-1">A</div>
+        <div class="item s-0 fg-1">B</div>
+        <div class="item s-0 fg-1">C</div>
+        <div class="item s-0 fg-1">D</div>
+        <div class="item s-0 fg-1">E</div>
+    </div>
+
+    <p>FS 0 basis: 100px</p>
+    <div class="container">
+        <div class="item s-0 fg-1">A</div>
+        <div class="item s-0 fg-1">B</div>
+        <div class="item s-0 fg-1">Gate keepers of hell but sit on the laptop 
+        but when owners are asleep, cry for no apparent reason.</div>
+        <div class="item s-0 fg-1">D</div>
+        <div class="item s-0 fg-1">E</div>
+    </div>
+
+    <p>FS mix basis: 100px</p>
+    <div class="container">
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-2 fg-1">B</div>
+        <div class="item s-2 fg-1">Gate keepers</div>
+        <div class="item s-3 fg-1">D</div>
+        <div class="item s-3 fg-1">E</div>
+</body>
+</html>

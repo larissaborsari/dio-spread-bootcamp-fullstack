@@ -1,0 +1,3 @@
+links úteis: 
+https://git-scm.com/
+https://www.markdownguide.org/

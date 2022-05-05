@@ -1,0 +1,153 @@
+Primeiros Passos - desenvolvimento web
+
+início da internet no departamento de defesa dos estados unidos durante a
+guerra fria com a arpanet
+posteriormente foi liberado para universidades, depois uso comercial e em 1992 
+o www possibilitou o acesso para todos os usuários. 
+
+Qual foi o primeiro domínio criado? 
+
+O Symbolics.com continua no ar até hoje e ostenta o título de domínio mais
+velho da web. O site foi registrado no dia 15 de março de 1985.
+
+Qual foi o primeiro blog criado?
+
+Open Diary (1994) O site do cientista e pesquisador brasileiro Cláudio Pinhanez,
+que na época já trabalhava no MIT Media Lab, é considerado o primeiro a ser 
+publicado em formato de diário virtual, atualizado até 1996. 
+
+Qual foi a primeira compra feita pela internet?
+
+Um CD de Sting (Ten Summoner's Tales). A transação ocorreu a 11 de agosto de 1994
+e foi feita através de uma tecnologia que permitiu encriptar os dados do cartão de
+crédito. O CD custou 12,48 dólares, mais os custos de envio.
+
+Qual o site mais antigo em atividade?
+
+symbolics.com
+
+COMO FUNCIONA A INTERNET
+
+- REDES
+
+Backbone - estruturas que gerenciam as conexões e interligam outros backbones
+DNS - domain name service -> transforma a urlem um número de IP (internet protocol)
+ex: 127.0.0.1 local host
+
+<ping> site -> mostra o IP do site e latência
+
+TCP/IP -> Transmission Control Protocol -> protocolo de controle de transmissão. 
+usa um modelo de camadas. A comunicação entre dispositivos precisa passar por 4 
+camadas: 
+1 - camada física: placa de rede, cabo de rede, placa wireless
+2 - rede: tem que estar configurada, não basta a conexão física
+3 - transporte: tem que ter uma forma de transporte definida (TCP, UDP)
+4 - aplicação: qual a aplicação dos dados (FTP, SMTP, HTTP)
+
+TCP X UDP
+
+UDP: rápido, não confiável (não tem confirmação de envio nem de recebimento),
+livestream - por ser rápido é adequado para realização de lives, por exemplo.
+
+TCP: um pouco mais lento mas tem foco na conexão, handshake - recebimento e envio
+integridade na ordem dos dados
+
+Portas: 
+20: FTP
+22: SSH
+25: SMTP
+53: DNS
+80: HTTP
+443: HTTPS
+
+MODEM: modulator - demodulator -> modula e demodula sinais, converte dados em um
+formato que possa ser transmitido de um computador para outro e que possam ser lidos
+
+ROTEADOR: distribui internet para um ou mais dispositivos de uma rede, pode fazer a
+comunicação entre redes. Não é seletivo em relação à quem recebe, envia para todos
+que estão conectados no roteador e quem solicitou recebe. Isso gera um tráfego muito
+grande. 
+
+SWITCH: distribui internet para um ou mais dispositivos de uma rede, distribui dados
+somente para quem solicitou.
+
+WI-FI: IEEE - define os padrões para o WI-FI, o primeiro foi o 802.11, atualmente está
+no 802.11n que tem 2,4 GHz / 5GHZ, 150-600 Mbps
+SEGURANÇA: WEP - fornece de 64 bits e de 18 bits
+           WPA - chave trocada periodicamente
+           WPA2 - tem uma camada de AES e usa 802.11i, é um pouco mais lento porém é
+o mais seguro que tem hoje.
+
+BLUETOOTH - faz conexão ponto a ponto e não depende da internet para funcionar. Possibi-
+lita conectar diversos tipos de dispositivos.
+classe 1 - alcança 100m
+classe 2 - alcança 10 m
+classe 3 - alcança 1 m
+
+BROWSER - é o navegador que facilita o acesso à sites. Identifica várias linguagens
+de programação, de marcação e conteúdo multimídia. 
+Cache - dados que o site deixa armazenados no seu computador para não precisar
+recarregar elementos toda vez que você reacessa o site. 
+Cookies - Dados seus que o site guarda a fim de personalilzar sua experiência, ou
+outros fins.
+
+PÁGINA ESTÁTICA E DINÂMICA
+
+O site estático não gera interação, ele apenas redireciona de uma página para a outra
+Diferente de um site dinâmico, por exemplo o youtube, onde é possível interagir com
+o conteúdo sem nem clicar em um link ou mudar de página. 
+
+VERSÕES ANTIGAS DE SITES FAMOSOS: http://archive.org/web/
+
+Aplicativo - software executado no navegador.Em muitas situações não há diferença
+entre site e aplicativo, cada vez mais é utilizado o aplicativo no navegador.
+
+E-commerce: site de compra e venda com sistemas de pagamento, que pode ser exterior
+ao site, ou seja, a pessoa é redirecionada a outro site para fazer o pagamento
+
+WEB-SERVER: estático: é um servidor físico
+dinâmico: softwares presentes no servidor físico
+
+web-server dinâmico pode ser file server, application server ou database. Normalmente
+é todos ao mesmo tempo. 
+
+WEB-SERVICE: interface dispoível para fazer requisições e consultas em bancos de
+dados inacessíveis.Sem que você tenha acesso à dados que não deve.
+
+STACKS
+são pilhas de tecnologias, conjunto de softwares necessários para executar um app
+ou programa, linguagens de programação, ferramentas de interação, ambientes de inte
+ração do app/software
+Todo o ambiente tecnologico com todas suas ferramentas e capacidades disponíveis
+para gerar um uso, produto, serviço ... São os recursos tecnológicos disponíveis
+
+Importância: é necessário conhecer até onde uma equipe ou empresa pode ir,
+considerando tanto limite superior quanto inferior. |Saber as limitações das
+tecnologias.
+
+FRONT-END:  "parte da frente", trabalha com o visual e também com a programação,
+com a interface do usuário UI/UX, tecnologias comuns: HTML, CSS, JQUERY, JS, AJAX,
+PHP, Bootstrap, etc.
+
+BACK-END:"parte de trás", servidores, bancos de dados, entre interface e banco de
+dados, regras de negócio, validações, tecnologias comuns: MYSQL, ORACLE, Protocolos
+de Comunicação, Java, Node.JS
+
+FULL-STACK: trabalha em todas as camadas do desenvolvimento de um software, tanto
+front-end, quanto back-end
+
+
+PRINCIPAIS LINGUAGENS DE PROGRAMAÇÃO
+
+HTML E CSS -> NÃO SÃO LINGUAGENS DE PROGRAMAÇÃO
+
+JAVASCRIPT (JQUERY, AJAX, OUTRAS LIBS)
+PHP
+.NET
+ASP
+JAVA
+RUBY (ON RAILS)
+PYTHON
+PERL
+C/C++/C#
+

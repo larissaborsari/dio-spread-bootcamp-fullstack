@@ -1,0 +1,114 @@
+FLEX BOX - CSS
+
+Foi projetado como um modelo de layout unidimensional e como um método que pode
+oferecer distribuição de espaço entre itens em uma interface e recursos de 
+alinhamento.
+
+Flex Container - é a tag que envolve os itens, nela que se aplica a propriedade
+display: flex, transformando todos os seus itens filhos em flex itens.
+
+Propriedade relacionadas: display ; flex-direction ; flex-wrap ; flex-flow ; 
+justify-content ; alignitems ; align-content
+
+Flex item - são os filhos diretos de um flex container, também podem se tornar flex
+container
+
+propriedades relacionadas - flex-grow ; flex-basis ; flex-shrink ; flex ; order ;
+align-self.
+
+Flex-direction: propriedade que estabelece eixos dentro de um container, define a 
+direação em que os flex items são colocados no container.
+os eixos são: 
+row -> à direção do texto, esquerda para a direita
+row-reverse -> direção oposta do texto, direita para a esquerda
+column -> ordenação de cima para baixo, em coluna unica
+column-reverse- de baixo para cima
+
+Flex-wrap
+Define ou não a quebra de linha do flex container. Por padrão os itens não quebram 
+linha, porém quando não podem mais ser compactados começam a "vazar" do container. 
+
+casos: 
+nowrap -> padrão, não permite a quebra de linha
+wrap -> permite a quebra de linha assim que um dos flex itens não puder mais ser
+compactado
+wrap-reverse -> quebra para cima as linhas, vai para a linha de cima ao invés da
+linha de baixo, ideia de empilhamento.
+
+Flex-flow
+atalho para as propriedades flex-direction e flex-wrap
+
+Justiy Content
+
+alinha os itens dentro do container de acordo com a direção pretendida e trata
+da distribuição de espaçamento entre eles
+
+flex-start -> início do container
+flex-end -> fim do container
+center-> ao centro do container
+space-between -> cria um espaçamento igual entre os elementos
+
+Align Items
+
+Alinhamento dos flex items de acordo com o eixo do container. Diferente para 
+colunas e linhas. Tipos de alinhamento: 
+center -> itens ao centro
+stretch-> padrão
+flex-start -> ao início
+flex-end -> ao fim
+baseline -> linha base da tipografia dos itens
+
+Align-content
+
+trata o alinhamento das linhas do container em relação ao eixo vertical do
+container
+requisitos: utilizar quebra de linhas (flex-wrap: wrap); altura do container maior que a 
+soma das linhas dos itens
+
+tipos de alinhamento: 
+center: alinhamento ao centro
+stretch: padrão - flex items crescem igualmente
+flex-start: aliinhamento ao início
+flex-end: alinhamento ao fim
+space-between: espaçamento igual entre os elementos
+space-around: espaçamentos do meio duas vezes maiores que das extremidades
+
+Propriedades dos Itens
+
+
+Flex-grow
+
+define a proporção de crescimento dos itens, respeitando o tamanho de seus 
+conteúdos internos - não funciona se o justify-content estiver aplicado
+
+Flex-basis
+
+estabelece o tamanho inicial do item antes das distribuições de espaço restante
+dentro dele, usa como base o conteúdo interno.
+
+auto: caso o item não tenha tamanho, será proporcional ao conteúdo do item
+px, %, em ... valores exatos definidos
+0: terá relação com a definição do flex-grow
+
+Flex-shrink
+
+estabelece a capacidade de redução ou compressão do tamanho de um item
+
+Flex
+
+atalho ou abrevação do grow, shrink e basis. 
+
+Order
+ordena os itens 
+
+Align-self
+estabelecce o alinhamento de modo individual sobre um determinado
+item. É aplicado ao item, então o container não deve ter um align
+items definido.
+auto: padrão, respeita a definição de alinhamento do container
+flex-start: início do container
+flex-end: fim do container
+center: relativo ao centro
+stretch: ocupa todos os espaços relativos
+baseline: linha base da tipografia
+

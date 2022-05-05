@@ -1,0 +1,17 @@
+html - criado por Tim Berners-Lee em 1991 para compartilhar 
+documentos com colegas de trabalho/pesquisa
+
+Elemento html inicia com uma tag de abertura,tipo do elemento
+atributo, conteúdo e tag de fechamento. 
+
+Estrutura Básica
+
+<!DOCTYPE html>  --> diz ao navegador que este é um documento html
+<html> tag de abertura do documento
+<head> tag de cabeçalho
+<body> tag do corpo do texto, conteúdo principal
+
+<h1> maior títutlo -o  ideal é utilizar apenas um por página
+<p> representa um parágrafo
+<a> é uma âncora para um link ou e-mail
+

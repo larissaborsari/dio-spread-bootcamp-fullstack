@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Flex Box - Align Self</title>
+
+    <style>
+        .container{
+            display: flex;
+            max-width: 350px;
+            border: 1px solid white;
+        }
+
+        .algn-cont{
+            align-items: center;
+        }
+
+        .item {
+            background-color: aquamarine;
+            color: black;
+            margin: 5px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto; /*segue o alinhamento definido no container*/
+        }
+
+        .column {
+            flex-direction: column;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p>auto</p>
+    <section class="container algn-cont">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">LOREM IPSUM DOLOR ETC ETC</div>
+        <div class="item auto">ITEM 4</div>
+    </section>
+
+    <p>mix</p>
+    <section class="container">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">LOREM IPSUM DOLOR ETC ETC</div>
+        <div class="item end">ITEM 4</div>
+    </section>
+
+    <p>mix</p>
+    <section class="container">
+        <div class="item center">AAA</div>
+        <div class="item start">12345678910111213141516</div>
+        <div class="item end">LOREM IPSUM DOLOR ETC ETC</div>
+        <div class="item stretch">ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4</div>
+    </section>
+
+    <h1>column</h1>
+    <p>auto</p>
+    <section class="container algn-cont column">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">LOREM IPSUM DOLOR ETC ETC</div>
+        <div class="item auto">ITEM 4</div>
+    </section>
+
+    <p>mix</p>
+    <section class="container column">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">LOREM IPSUM DOLOR ETC ETC</div>
+        <div class="item end">ITEM 4</div>
+    </section>
+
+    <p>mix</p>
+    <section class="container column">
+        <div class="item center">AAA</div>
+        <div class="item start">12345678910111213141516</div>
+        <div class="item end">LOREM IPSUM DOLOR ETC ETC</div>
+        <div class="item stretch">ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4 ITEM 4</div>
+    </section>
+</body>
+</html>
