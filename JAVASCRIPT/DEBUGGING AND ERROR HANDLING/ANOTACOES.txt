@@ -1,0 +1,35 @@
+DEBUGGING AND ERROR HANDLING
+
+ECMAScript Error
+
+Eros que acontecem em tempo de execução, enquanto roda o código
+composto por uma mensagem, nome do erro, linha em que aconteceu e call stack que é a 
+posição na pilha.
+
+DOMException 
+
+erro do DOM (Document Object Model) -> relacionados ao código que está
+sendo rodado em uma página da web (que está consumindo este código)
+São referentes a estrutura da sua árvore de elementos dentro de uma
+página da web. 
+
+Throw, Return - Try, Catch
+
+Throw -> faz a função retornar um erro quando atendida uma dada condição
+Return -> retorna uma string que pode ser definida para uma situação de erro
+por exemplo: 'String inválida'
+
+Try ... catch
+
+verifica um trecho de código dentro do bloco de try e se apresentar erro, este erro vai ser 
+capturado no bloco catch
+
+Finally -> tendo o erro ou não, a instrução finally é chamada de qualquer forma
+
+Manipulando o objeto ERROR
+
+	aceita os parâmetros -> mensagem, nome do arquivo e número da linha
+	const meuErro = new Error('mensagem inválida')
+	meuErro.name: 'InvalidMessage';
+	throw meuErro;
+

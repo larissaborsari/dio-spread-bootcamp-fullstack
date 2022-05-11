@@ -9,3 +9,5 @@ function somaTudo(array) {
 const arr = [1, 2];
 
 console.log(somaTudo(arr));
+
+console.log(arr);
