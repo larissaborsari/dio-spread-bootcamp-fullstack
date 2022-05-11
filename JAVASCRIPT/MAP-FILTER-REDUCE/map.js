@@ -1,4 +1,3 @@
-//criar uma função utilizando o this e depois uma sem o this
 
 const maca = {
     value: 2,
@@ -14,7 +13,7 @@ const nums = [1, 2];
 function mapComThis(arr, thisArg) {
     return arr.map(item => {
         return item * thisArg.value;
-        
+
     });
 }
 
