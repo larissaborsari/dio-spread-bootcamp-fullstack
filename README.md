@@ -1,5 +1,5 @@
 # DIO - Spread Fullstack Developer Bootcamp
-#### Repositório para anotações importantes do Bootcamp Spread Fullstack Developer da Digital Innovation One - DIO.
+#### Repositório para anotações importantes do Bootcamp Spread Fullstack Developer da Digital Innovation One - DIO -> GIT, GITHUB, HTML, CS, JAVASCRIPT, TYPESCRIPT, REACT, NODE, SQL.
 
 ### Links Úteis
 [Download do GIT](https://git-scm.com/)
