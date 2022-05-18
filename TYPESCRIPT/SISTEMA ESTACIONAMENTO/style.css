@@ -1,0 +1,65 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(184, 253, 230);
+    text-align: center;
+}
+
+
+input {
+    border-radius: 20px;
+    height: 30px;
+    width: 200px;
+    margin: 5px;
+    margin-top: 30px;
+    background-color: rgb(210, 198, 218);
+}
+
+#cadastrar {
+    border-radius: 20px;
+    height: 35px;
+    width: 100px;
+    margin: 5px;
+    margin-top: 30px;
+    background-color: rgb(166, 255, 0);
+    border: none;
+    font-weight: bold;
+
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container-2 {
+    padding-top: 150px;
+    margin: auto;
+    width: 100%;    
+}
+
+tr {
+    line-height: 50px;
+}
+
+#nometh {
+    width: 50%
+}
+
+#nometh {
+    width: 20%
+}
+
+table {
+    margin: auto;
+}
+
+.delete {
+    background-color: rgb(247, 165, 165);
+    color: red;
+}
+
+
+
+
+

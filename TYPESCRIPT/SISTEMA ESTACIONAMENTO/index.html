@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestão de Estacionamento</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <input id="nome" type="text" placeholder="Digite o nome do veículo: ">
-    <input id="placa" type="text" placeholder="Digite a placa do veículo: ">
-    <button id="cadastrar">Cadastrar</button>
-
-    <table>
+    <div class="container-1">
+        <input id="nome" type="text" placeholder="Digite o nome do veículo: ">
+        <input id="placa" type="text" placeholder="Digite a placa do veículo: ">
+        <button id="cadastrar">Cadastrar</button></div>
+    <div class="container-2"><table>
         <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Placa</th>
+            <tr class="item">
+                <th id="nometh">Nome</th>
+                <th id="placath">Placa</th>
                 <th>Entrada</th>
                 <th>Ações</th>
             </tr>
@@ -23,7 +24,8 @@
         <tbody id="patio">
 
         </tbody>
-    </table>
+    </table></div>
+    
 
 
 <script src="./script.js"></script>
