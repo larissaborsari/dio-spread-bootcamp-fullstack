@@ -6,7 +6,8 @@
     align-items: center;
     justify-content: space-between;
     height: 30px;
-    width: 6%;
+    width: 9%;
+    margin: 5px;
 }
 
 .counter-button-plus-active{
@@ -36,3 +37,7 @@
    cursor: pointer; 
 }
 
+
+#moeda {
+    margin-right: 5px;
+}
