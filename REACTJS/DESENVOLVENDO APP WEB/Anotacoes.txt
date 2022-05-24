@@ -1,0 +1,6 @@
+Flux - arquitetura criada pelo facebook para comunicação entre componentes
+
+A implementação mais famosa do Flux é o Redux, porém existem outras diversas implementações
+
+Redux - 3 princípios básicos -> single source of truth (tem uma única Store); state é read only (toda a
+arvore de estados é read only); Mudanças são feitas com pure functions
