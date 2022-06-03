@@ -3,14 +3,17 @@ import Layout from "./components/layout";
 import Profile from "./components/profile";
 import Repositories from "./components/repositories";
 import ResetCSS from "./global/resetcss";
+import GitHubProvider from './providers/github-provider';
 
 function App() {
   return <main>
-    <ResetCSS />
-    <Layout>
-      <Profile/>
-      <Repositories/>
-    </Layout>
+    <GitHubProvider>
+      <ResetCSS />
+      <Layout>
+        <Profile/>
+        <Repositories/>
+      </Layout>
+    </GitHubProvider>
   </main>;
 }
 
