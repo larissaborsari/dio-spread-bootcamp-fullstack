@@ -1,17 +1,12 @@
 import React from 'react';
 
-function RepositoryItem() {
+
+function RepositoryItem({name, linkToRepo, fullName}) {
   return (
     <div>
-        <h2>
-            casadecambio_muitodinheiro
-        </h2>
-        <h4>
-            full name:
-        </h4>
-        <span>
-            larissaborsari/casadecambio_muitodinheiro
-        </span>
+        <h2>{name}</h2>
+        <h4>Full Name:</h4>
+        <a href={linkToRepo} target="_blank" rel="noreferrer">{fullName}</a>
     </div>
   )
 }
