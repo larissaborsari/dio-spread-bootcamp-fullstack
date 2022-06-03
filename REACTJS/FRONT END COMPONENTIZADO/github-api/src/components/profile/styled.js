@@ -39,6 +39,7 @@ export const WrapperStatusCount = styled.div`
 export const WrapperUserName = styled.div`
     display: flex;
     align-items: center;
+    margin-top: 8px;
     h3 {
         margin-right: 8px;
         text-align: center;

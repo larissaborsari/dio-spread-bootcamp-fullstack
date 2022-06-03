@@ -13,6 +13,7 @@ const ResetCSS = createGlobalStyle`
     box-sizing: border-box;
     border-style: solid;
     border-width: 0;
+    font-family: roboto, sans-serif;
     }
 
     /* Document */
