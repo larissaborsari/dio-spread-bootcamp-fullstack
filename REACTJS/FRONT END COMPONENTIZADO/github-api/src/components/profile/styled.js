@@ -43,6 +43,7 @@ export const WrapperUserName = styled.div`
     h3 {
         margin-right: 8px;
         text-align: center;
+        color: #CED2D6;
     }
     a{
         color: #FA002B;

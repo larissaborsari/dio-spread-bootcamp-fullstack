@@ -14,6 +14,7 @@ const ResetCSS = createGlobalStyle`
     border-style: solid;
     border-width: 0;
     font-family: roboto, sans-serif;
+    background-color: #4C4D4F;
     }
 
     /* Document */
