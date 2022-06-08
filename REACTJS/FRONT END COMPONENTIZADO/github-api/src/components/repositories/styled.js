@@ -65,4 +65,5 @@ export const WrapperList = styled.div`
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    background-color: #CED2D6;
 `;

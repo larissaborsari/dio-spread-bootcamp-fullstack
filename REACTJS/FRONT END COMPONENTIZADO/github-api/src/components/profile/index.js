@@ -13,7 +13,7 @@ function Profile() {
             <h1>{githubState.user.name}</h1>
             <S.WrapperUserGeneric>
                 <h3>Username: </h3>
-                <a href={githubState.user.html_Url} target="_blank" rel="noreferrer">{githubState.user.name}</a>
+                <a href={githubState.user.login} target="_blank" rel="noreferrer">{githubState.user.login}</a>
             </S.WrapperUserGeneric>
             <S.WrapperUserGeneric>
                 <h3>Company: </h3>
@@ -21,7 +21,7 @@ function Profile() {
             </S.WrapperUserGeneric>
             <S.WrapperUserGeneric>
                 <h3>Location: </h3>
-                <span>{githubState.user.location}</span>
+                <div>{githubState.user.location}</div>
             </S.WrapperUserGeneric>
             <S.WrapperUserGeneric>
                 <h3>Blog: </h3>

@@ -31,6 +31,7 @@ export const WrapperInfoUser = styled.div`
 export const WrapperStatusCount = styled.div`
     display: flex;
     align-items: flex-start;
+    
     div {
         margin: 8px;
     }
