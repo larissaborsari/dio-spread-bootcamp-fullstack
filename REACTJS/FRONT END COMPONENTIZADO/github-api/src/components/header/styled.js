@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
         border-radius: 8px;
         width: 100%;
         height: 44px;
+        color: #ccc;
     }
 
     button{
